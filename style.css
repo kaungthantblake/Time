@@ -1,0 +1,104 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/1bg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+.logo {
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.content h1 span{
+    color: #ff3753;
+}
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 150px;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+/* card section */
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content-section .card{
+    flex: 1;
+    margin: 20px auto;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+.content-section .card img{
+    width: 150px;
+    height: auto;
+    
+}
+.content-section .card h2{
+    margin: 15px 0px;
+    font-size: 28px;
+    color:#379DFF ;
+}
+
+.typing .h3 {
+    color:aquamarine;
+}
+
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
